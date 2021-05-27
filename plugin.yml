@@ -1,0 +1,6 @@
+name: SlimeBoost
+version: 1.0.0
+main: Vazzi\SlimeBoost\SlimeBoost
+api: 3.19.2
+author: Vazzi
+description: SlimeBoost Plugin to create a Boost Block

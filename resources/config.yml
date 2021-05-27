@@ -1,0 +1,13 @@
+# SlimeBoost Configuration File
+
+# Register Slime Block if it is not registered yet (true | false)
+
+register-slime: true
+
+# ID of the Boost Block  ( 165 = Slime Block )
+block-id: 165
+
+# Boost Settings - Default Values are 1
+
+forward-boost: 1
+high-boost: 1
