@@ -20,7 +20,7 @@ class BoostListener implements Listener
 
 		$player = $moveEvent->getPlayer();
 
-		if($player->getLevel()->getBlock($player->floor()->subtract(0, 1, 0))->getId() === SlimeBoost::$blockID){
+		if(in_array($player->getLevel()->getName(), SlimeBoost::$worlds) && $player->getLevel()->getBlock($player->floor()->subtract(0, 1, 0))->getId() === SlimeBoost::$blockID){
 			switch ($player->getDirection()){
 
 				case 2:

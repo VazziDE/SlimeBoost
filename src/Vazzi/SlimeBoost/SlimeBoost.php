@@ -15,6 +15,7 @@ class SlimeBoost extends PluginBase
 
 	//Default Block ID 165 - Slime Block ID
 	public static $blockID = 165;
+	public static $worlds = [];
 
 	public function onEnable()
 	{
@@ -32,6 +33,16 @@ class SlimeBoost extends PluginBase
 		}
 		if(is_numeric($this->getConfig()->get("high-boost", 1))){
 			BoostListener::$highboost = (int)$this->getConfig()->get("high-boost",1);
+		}
+		if(!$this->getConfig()->exists("allowed-worlds")){
+			$this->getConfig()->set("allowed-worlds", ["world", "world2"]);
+			$this->getConfig()->save();
+			$this->getLogger()->info("§eSlimeBoost Plugin Config has been updated.");
+			self::$worlds = ["world", "world2"];
+		}else{
+			foreach ($this->getConfig()->get("allowed-worlds", []) as $worldname){
+				self::$worlds[] = $worldname;
+			}
 		}
 		if ($this->getConfig()->get("register-slime", true)){
 			BlockFactory::registerBlock(new SlimeBlock(165), true);

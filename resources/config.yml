@@ -7,6 +7,12 @@ register-slime: true
 # ID of the Boost Block  ( 165 = Slime Block )
 block-id: 165
 
+# Type the name of the worlds where the boost blocks work - use [] for empty
+
+allowed-worlds:
+  - world
+  - world2
+
 # Boost Settings - Default Values are 1
 
 forward-boost: 1
