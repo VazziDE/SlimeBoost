@@ -1,8 +1,10 @@
 # SlimeBoost
 **SlimeBoost is a PocketMine Plugin to create a Boost Block.**
 
-[![](https://poggit.pmmp.io/shield.state/SlimeBoost)](https://poggit.pmmp.io/p/SlimeBoost)
+
 <a href="https://poggit.pmmp.io/p/SlimeBoost"><img src="https://poggit.pmmp.io/shield.state/SlimeBoost"></a>
+<a href="https://poggit.pmmp.io/p/SlimeBoost"><img src="https://poggit.pmmp.io/shield.dl.total/SlimeBoost"></a>
+
 
 ![image](https://user-images.githubusercontent.com/45903049/119860078-46074780-bf16-11eb-9a96-ad73aee1e8eb.png)
 
